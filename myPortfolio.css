@@ -1,0 +1,188 @@
+/* CSS for the left panel */
+.left-panel {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* CSS for the navigation components */
+  .component {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #e9e9e9;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .component:hover {
+    background-color: #ccc;
+  }
+  
+  .component.active {
+    background-color: #666;
+    color: #fff;
+  }
+  
+  /* CSS for the content area */
+  .content {
+    margin-left: 20%;
+    padding: 20px;
+    display: none;
+  }
+  
+  /* CSS for heading tags */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* CSS for paragraph tags */
+  p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* CSS code for the page layout and navigation */
+  
+  /* Left panel */
+  .left-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .left-panel.active {
+    transform: translateX(0%);
+  }
+  
+  .content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  /* CSS for the left panel */
+  .left-panel {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* CSS for the content area */
+  .content {
+    margin-left: 20%;
+    padding: 20px;
+  }
+  
+  /* CSS for the active component */
+  .active {
+    font-weight: bold;
+  }
+  
+  /* //contacts......... */
+  
+  .header {
+    z-index: 3;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* ICONS */
+  
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+  }
+  
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  
+  /* //contacts */
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 5vh;
+  }
+  
+  .container0 {
+    background: linear-gradient(yellow, cyan, blue);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 44rem;
+    gap: 1rem;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 3vh;
+  }
+  
+  textarea {
+    height: 6rem;
+    font-size: 3vh;
+  }
+  
+  button {
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: #673de6;
+    color: white;
+  }

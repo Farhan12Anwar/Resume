@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MY Resume</title>
+  <link href="myPortfolio.css" rel="stylesheet" type="text/css" />
+  <link href="home.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* CSS for the left panel */
+    .left-panel {
+      float: left;
+      width: 20%;
+      height: 100%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* CSS for the content area */
+    .content {
+      margin-left: 20%;
+      padding: 20px;
+    }
+
+    /* CSS for the active component */
+    .active {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left-panel">
+    <!-- Navigation components -->
+    <div class="component" id="home-link" onclick="showContent('home')">Home</div>
+    <div class="component" id="contact-link" onclick="showContent('contact')">Contact</div>
+    <!-- <div class="component" id="info-link" onclick="showContent('info')">My projects</div> -->
+    <div class="component" id="guide-link" onclick="showContent('guide')">Resume</div>
+  </div>
+
+  <div class="content" id="home">
+    <h2>Home</h2>
+    <div class="header__title">
+      <h1>
+        ----
+        <span class="highlight">HELLO</span>
+        <br />
+        <span class="highlight">WORLD</span>----
+      </h1>
+      <img src="farhan.jpg" class="header__img" />
+    </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">ABOUT ME</h2>
+        <h3 class="section__header">
+        </h3>
+      </div>
+
+      <div class="features">
+        <img data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <img class="image" src="studies.jpeg" style="height:100px" ; class="nav__logo" id="logo" designer="Jonas"
+              data-version-number="3.0" />
+
+          </div>
+          <h5 class="features__header">MY STUDIES</h5>
+          <p>
+            PURSUING BCA
+            2ST YEAR
+            FORTUNE SCHOOL OF BUISNESS
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <img src="book.jpeg" style="height:100px" ; class="nav__logo" id="logo" designer="Jonas"
+              data-version-number="3.0" />
+          </div>
+          <h5 class="features__header">LANGUAGES</h5>
+          <p>
+            HTML,
+            CSS,
+            JAVASCRIPT,
+            Adv JAVA,
+            C,
+            C++
+          </p>
+        </div>
+        <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+
+        <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
+        <div class="features__feature">
+        </div>
+    </section>
+
+
+  </div>
+  <!-- ////////////////////SECTION2//////////////////// -->
+  <div class="content" id="contact">
+    <h2>Contact Me through the following platforms</h2>
+    <div class="header">
+      <nav>
+        <ul>
+          <a href="https://www.instagram.com/anwarfarhan339/" target="_blank">
+  <button class="btn"><i class="fa fa-instagram"></i></button>
+</a>
+              <a href="https://www.linkedin.com/in/farhan-anwar-7b9613271/" target="_blank">
+          <button class="btn"><i class='fa fa-linkedin'></i></button>
+              </a>
+          <a href="https://github.com/Farhan12Anwar" target="_blank">
+          <button class="btn"><i class="fa fa-github"></i></button>
+          </a>
+          <button class="btn"><i class='fa fa-bell'></i></button>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="container0">
+    <div class="container">
+      <h1>Contact Form</h1>
+      <form action="https://formsubmit.co/4b7ab86c124298e4629b6fe2b6422166" method="POST">
+        <input type="text" name="Name" placeholder="full Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <select name="Continent">
+          <option>INDIA</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>AUSTRALIA</option>
+          <option>EUROPE</option>
+          <option>ANTARTICA</option>
+          <option>SAHARA</option>
+        </select>
+        <textarea name="Message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div> -->
+  </div>
+
+  <!-- </section> -->
+
+
+  <!-- ////////////////////SECTION3//////////////////// -->
+  <!-- <div class="content" id="info" style="display: none;">
+    <h2>My Projects</h2>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">MY PROJECTS</h2>
+        <h3 class="section__header">
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+            <span>01</span>PROJECT 1
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+
+            <span>02</span>GAME
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Project2
+          </button>
+        </div>
+        <div class="operations__content operations__content--1 operations__content--active">
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Portfolio
+          </h5>
+          <p>
+            A simple portfolio website which showcases my skills and intrests.
+          </p>
+          <a href="https://official-portfolio-3.farhananwar339.repl.co/">
+            <img src="site.jpg" class="header__img"></a>
+
+          <a href="https://official-portfolio-3.farhananwar339.repl.co/">
+            <img src="site.jpg" class="header__img">
+          </a>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Game
+          </h5>
+          <p>
+            A simple game to pass the time.
+          </p>
+          <a href="https://game.farhananwar339.repl.co/">
+            <img src="game.jpg" class="header__img"></a>
+
+          <a href="https://game.farhananwar339.repl.co/">
+            <img src="game.jpg" class="header__img">
+          </a>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Portfolio2
+          </h5>
+          <p>
+            A simple portfolio which showcases my skills and intrests.
+          </p>
+          <a href="https://official-portfolio-1.farhananwar339.repl.co/">
+            <img src="web.jpg" class="header__img"></a>
+
+          <a href="https://official-portfolio-1.farhananwar339.repl.co/">
+            <img src="web.jpg" class="header__img">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div> -->
+
+  <!-- ////////////////////SECTION4//////////////////// -->
+  <div class="content" id="guide" style="display: none;">
+    <h2>Resume</h2>
+    <iframe src="resume.html" width="100%" height="800px"></iframe>
+  </div>
+
+  <script src="myPortfolio.js"></script>
+  <script src="projects.js"></script>
+</body>
+
+</html>
